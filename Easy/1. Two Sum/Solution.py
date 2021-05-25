@@ -33,3 +33,21 @@ print(brute_force(nums, target))
 
 
 ### Solution for direct submission
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        ''' Note that the output should be the index of the numbers in the list, not the numbers itself, so you'll get a wrong outcome if you decide to sort the list
+    1. Create an empty dictionary
+    2. Start with the first element in the list. Subtract the target with this element.
+    3. Find the subtracted value from the hashmap/dictionary. 
+    4. If the value does not exist, then add the element to the dictionary as the key along with it's index as the value'''
+        # 1. Create an empty dictionary
+        dictionary = {}
+        # 2. Start with the first element in the list. Subtract the target with this element.
+        for i, n in enumerate(nums):
+            sub = target - n
+            # 3. Find the subtracted value from the hashmap/dictionary.
+            if sub in dictionary:
+                return [dictionary[sub], i]
+            # If the value does not exist, then add the element to the dictionary as the key along with it's index as the value
+            dictionary[n] = i
+        return
