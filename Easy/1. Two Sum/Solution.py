@@ -1,3 +1,6 @@
+# Runtime: 60 ms, faster than 19.99% of Python3 online submissions for Two Sum.
+# Memory Usage: 15.3 MB, less than 9.73% of Python3 online submissions for Two Sum.
+
 def brute_force(nums, target):
     '''Brute Force Approach
     Time Complexity: O(n^2)

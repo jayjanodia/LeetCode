@@ -1,3 +1,6 @@
+# Runtime: 68 ms, faster than 72.50% of Python3 online submissions for Add Two Numbers
+# Memory Usage: 14.4 MB, less than 41.88% of Python3 online submissions for Add Two Numbers
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
