@@ -1,3 +1,5 @@
+# Reference for dictionary approach: https://www.youtube.com/watch?v=KLlXCFG5TnA
+
 # Runtime: 60 ms, faster than 19.99% of Python3 online submissions for Two Sum.
 # Memory Usage: 15.3 MB, less than 9.73% of Python3 online submissions for Two Sum.
 
