@@ -8,6 +8,20 @@ def searchRange(nums, target):
     3. Now compare the left and right pointer values. If both have the same values, then return the index of the left and right pointers. Else, if the value of the left pointer is less than the target, then increment the left pointer index. Also, if the value of the right pointer is greater than the target, then decrement the right pointer index.
     Note that this method only works since the list is sorted.
     '''
+    #1. Create 2 pointers, the left pointer and the right pointer. The left pointer points to the left-most element in the list while the right pointer points to the right-most element.
+    l = 0
+    r = len(nums) - 1
+    #2. If the target is not in the list, then return [-1, -1] as expected.
+    if target not in nums:
+        return [-1, -1]
+    #3. Now compare the left and right pointer values. If both have the same values, then return the index of the left and right pointers. Else, if the value of the left pointer is less than the target, then increment the left pointer index. Also, if the value of the right pointer is greater than the target, then decrement the right pointer index.
+    while nums[l] != nums[r]:
+        if nums[l] < target:
+            l += 1
+        else:
+            r -= 1
+
+    return [l, r]
 
 
 
